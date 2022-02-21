@@ -1,0 +1,15 @@
+html {
+  background-color: antiquewhite;
+}
+
+body {
+  margin: 20px;
+
+
+}
+
+.container {
+  padding: 50px;
+  align-items: center;
+  text-align: center;
+}
