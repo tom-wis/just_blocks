@@ -4,12 +4,16 @@ html {
 
 body {
   margin: 20px;
-
-
 }
-
-.container {
+.navbar {
+color: aqua;
+}
+/* .container {
   padding: 50px;
   align-items: center;
   text-align: center;
+} */
+
+#section2 {
+  background-color: antiquewhite;
 }
