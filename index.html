@@ -11,11 +11,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="scss/main.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark position-static">
+  <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-secondary">
     <div class="container-fluid">
       <a class="navbar-brand mx-2" href="#">Advocadus</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -56,7 +56,7 @@
   </section>
 
   <section>
-    <div class="px-4 py-5 my-5 text-center">
+    <div class="container-fluid px-4 py-5 my-5 text-center bg-warning" id="section1">
       <img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
       <h1 class="display-5 fw-bold">Centered hero</h1>
       <div class="col-lg-6 mx-auto">
@@ -150,18 +150,22 @@
       </div>
       <div class="row text-start">
         <div class="col-lg-6">
-          <h3 class="mr-3"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
-            <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z"/>
-          </svg>Private Client Service</h3>
+          <h3 class="mr-3"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+              class="bi bi-pc-display" viewBox="0 0 16 16">
+              <path
+                d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z" />
+            </svg>Private Client Service</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo quam repellendus
             doloremque enim recusandae, laborum similique dolor quis ratione maiores tempora labore, cupiditate dolorum
             repellat minus, ipsa exercitationem saepe?
           </p>
         </div>
-        <div class="col-lg-6">
-          <h3 class="ml-3"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
-            <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z"/>
-          </svg>Private Client Service</h3>
+        <div class="col-lg-6 .gy-4">
+          <h3 class="ml-3"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+              class="bi bi-pc-display" viewBox="0 0 16 16">
+              <path
+                d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z" />
+            </svg>Private Client Service</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo quam repellendus
             doloremque enim recusandae, laborum similique dolor quis ratione maiores tempora labore, cupiditate dolorum
             repellat minus, ipsa exercitationem saepe?
@@ -169,19 +173,23 @@
         </div>
       </div>
       <div class="row text-start">
-        <div class="col-lg-6">
-          <h3 class="ml-3"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
-            <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z"/>
-          </svg>Private Client Service</h3>
+        <div class="col-lg-6 .gy-4">
+          <h3 class="ml-3"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+              class="bi bi-pc-display" viewBox="0 0 16 16">
+              <path
+                d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z" />
+            </svg>Private Client Service</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo quam repellendus
             doloremque enim recusandae, laborum similique dolor quis ratione maiores tempora labore, cupiditate dolorum
             repellat minus, ipsa exercitationem saepe?
           </p>
         </div>
-        <div class="col-lg-6">
-          <h3 class="ml-3"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
-            <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z"/>
-          </svg>Private Client Service</h3>
+        <div class="col-lg-6 .gy-4">
+          <h3 class="ml-3"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+              class="bi bi-pc-display" viewBox="0 0 16 16">
+              <path
+                d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z" />
+            </svg>Private Client Service</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo quam repellendus
             doloremque enim recusandae, laborum similique dolor quis ratione maiores tempora labore, cupiditate dolorum
             repellat minus, ipsa exercitationem saepe?
@@ -190,10 +198,17 @@
       </div>
     </div>
   </section>
-  <div class="px-4 py-5 my-5 text-center" id="section4">
-    <h1>Section 1</h1>
-    <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-  </div>
+  <section>
+    <div class="container px-4 py-5 my-5 text-center" id="section4">
+      <div class="row">
+        <h1>Section 1</h1>
+        <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
+      </div>
+      <div class="row">
+        cztery obrazy i pod nimi nazwisko i pod nim tytul
+      </div>
+    </div>
+  </section>
   <div class="px-4 py-5 my-5 text-center" id="section5">
     <h1>Section 1</h1>
     <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
